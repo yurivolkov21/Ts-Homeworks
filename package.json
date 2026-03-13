@@ -1,0 +1,19 @@
+{
+    "name": "ts-homeworks",
+    "version": "1.0.0",
+    "private": true,
+    "description": "TypeScript homework runner and checker",
+    "scripts": {
+        "run:ex1": "tsx Ex1.ts",
+        "run:ex2": "tsx Ex2.ts",
+        "run:ex3": "tsx Ex3.ts",
+        "run:all": "npm run run:ex1 && npm run run:ex2 && npm run run:ex3",
+        "typecheck": "tsc --noEmit",
+        "check": "npm run typecheck && npm run run:all"
+    },
+    "devDependencies": {
+        "@types/node": "^24.0.0",
+        "tsx": "^4.20.0",
+        "typescript": "^5.8.0"
+    }
+}
